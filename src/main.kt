@@ -26,12 +26,13 @@ fun BookList(){
 // Работа с файлами
 fun FileJobs(){
     val files = File("/home/rinat/").listFiles()
-    println(files)
+    files.forEach { println(it) }
+//    println(files)
 }
 
 fun main(args: Array<String>) {
-    BookMap()
-    BookStdType()
-    BookList()
+//    BookMap()
+//    BookStdType()
+//    BookList()
     FileJobs()
 }
