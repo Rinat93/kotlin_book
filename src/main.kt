@@ -1,5 +1,6 @@
+import network_r.*
 import java.io.File
-import java.util.*
+//import java.util.*
 
 // расширение типов
 fun String.add_r(){
@@ -30,9 +31,21 @@ fun FileJobs(){
 //    println(files)
 }
 
+// Работа с объектами
+fun call_class(){
+    val pers = Person()
+    pers.age = 25
+    pers.fio = "Закирьянов Ринат Маратович"
+    println(pers.info)
+    println(pers.shields())
+}
+
+
 fun main(args: Array<String>) {
 //    BookMap()
 //    BookStdType()
 //    BookList()
-    FileJobs()
+//    FileJobs()
+//    call_class()
+    print(test_r())
 }
