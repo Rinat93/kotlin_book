@@ -23,3 +23,7 @@ class Kthread<T> : Thread {
         }
     }
 }
+// Функция расширения
+fun <T> Kthread<T>.log(){
+    println("Log ${this.res}")
+}

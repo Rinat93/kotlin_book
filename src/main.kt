@@ -50,5 +50,6 @@ fun main(args: Array<String>) {
 //    call_class()
     println("Поток начал работу")
     Kthread("Поток 1", call_class()).start()
+    Kthread("Поток 1", call_class()).log()
     println("Поток завершил работу")
 }
