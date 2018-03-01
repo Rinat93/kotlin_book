@@ -36,7 +36,6 @@ fun FileJobs(){
     files.forEach { println(it) }
 //    println(files)
 }
-
 // Работа с объектами
 fun call_class(){
     val pers = Person()
@@ -45,7 +44,6 @@ fun call_class(){
     println(pers.info)
     println(pers.shields())
 }
-
 fun main(args: Array<String>) {
 //    BookMap()
 //    BookStdType()

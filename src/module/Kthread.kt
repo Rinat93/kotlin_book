@@ -16,7 +16,7 @@ class Kthread<T> : Thread {
         synchronized<Unit>(this.res!!){
             println("Поток начал работу ${Thread.currentThread().name}")
             try{
-                Thread.sleep(500)
+                Thread.sleep(1500)
             }catch (e: InterruptedException){
                 throw e
             }
