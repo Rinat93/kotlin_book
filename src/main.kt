@@ -1,4 +1,6 @@
+import jdk.incubator.http.WebSocket
 import network_r.*
+import module.*
 import java.io.File
 //import java.util.*
 
@@ -40,12 +42,13 @@ fun call_class(){
     println(pers.shields())
 }
 
-
 fun main(args: Array<String>) {
 //    BookMap()
 //    BookStdType()
 //    BookList()
 //    FileJobs()
 //    call_class()
-    print(test_r())
+    println("Поток начал работу")
+    Kthread("Поток 1", call_class()).start()
+    println("Поток завершил работу")
 }
