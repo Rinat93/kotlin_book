@@ -1,5 +1,5 @@
 package module
-import java.util.*
+
 class Kthread<T> : Thread {
     var res: T
     constructor(name: String, res: T):super(name) {
@@ -18,7 +18,7 @@ class Kthread<T> : Thread {
             try{
                 Thread.sleep(500)
             }catch (e: InterruptedException){
-                println("Поток прерван ошибка ${e}")
+                throw e
             }
         }
     }

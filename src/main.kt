@@ -1,7 +1,8 @@
-import jdk.incubator.http.WebSocket
-import network_r.*
+//import jdk.incubator.http.WebSocket
+//import network_r.*
 import module.*
 import java.io.File
+
 //import java.util.*
 
 // расширение типов
